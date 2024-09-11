@@ -13,4 +13,4 @@ A system for privacy-preserving federated learning.
 ## Citation
 
 Cédric Boscher, Nawel Benarba, Fatima Elhattab, and Sara Bouchenak. Personalized Privacy-Preserving Federated Learning. In Proceedings
-of the 25th ACM/IFIP International Middleware Conference (Middleware ’24), Hong Kong, China, December 02–06, 2024.
+of the <a href="https://middleware-conf.github.io/2024/">25th ACM/IFIP International Middleware Conference (Middleware ’24)</a>, Hong Kong, China, December 02–06, 2024.
