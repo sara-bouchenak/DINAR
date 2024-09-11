@@ -10,12 +10,12 @@ import pandas as pd
 
 import config
 from aggregation import  average_weights
-from config import PerFL
+from config import DINAR
 from dataset import get_dataset, split_target_shadow_dataset, data_to_loader
 from mia import create_attack, prepare_attack_model
 from model import get_models
 from parser import Arguments
-from perfl import perfl, aggregation_perfl
+from dinar import dinar, aggregation_dinar
 from train import LocalUpdate
 from train_ldp import Opacus_LocalUpdate
 from train_wdp import WDPLocalUpdate
@@ -51,8 +51,8 @@ def aggregate_models(local_weights, args):
     :return: aggregated model
     """
     local_weights = copy.deepcopy(local_weights)
-    if args.ppm == PerFL or 'perfl' in args.ppm:
-        return aggregation_perfl(local_weights, args.perfl_layers)
+    if args.ppm == DINAR or 'dinar' in args.ppm:
+        return aggregation_dinar(local_weights, args.dinar_layers)
     return average_weights(local_weights, args)
 
 
@@ -362,8 +362,8 @@ def fl_training_ppm(args, device):
 
 
 def ppm_eval(t_train_loader, t_test_loader, t_val_loader, s_train_loader, s_test_loader, s_val_loader, args, model):
-    if args.ppm in config.PerFL_CONFIG or 'perfl' in args.ppm:
-        model = perfl(model, args.layer_type, args.perfl_layers)
+    if args.ppm in config.DINAR_CONFIG or 'dinar' in args.ppm:
+        model = dinar(model, args.layer_type, args.dinar_layers)
     return create_attack(t_train_loader, t_test_loader, t_val_loader, s_train_loader, s_test_loader, s_val_loader, args, model)
 
 

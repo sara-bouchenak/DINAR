@@ -1,5 +1,5 @@
 import config
-from config import PerFL
+from config import DINAR
 
 
 class Arguments:
@@ -96,10 +96,10 @@ class Arguments:
         self.motionsense_test_path = './data/motionsense/test'
 
         # Protection Mechanism
-        self.ppm = "perfl"
+        self.ppm = "dinar"
         self.shared_aggregation = False
         self.shared_aggregation_rate = 0.5
-        self.perfl_layers = ["classifier"]
+        self.dinar_layers = ["classifier"]
         self.layer_type = "linear"
 
         # Data results

@@ -1,5 +1,5 @@
 import config
-from config import PerFL
+from config import DINAR
 
 
 class Arguments:
@@ -99,7 +99,7 @@ class Arguments:
         self.ppm = "cdp"
         self.shared_aggregation = False
         self.shared_aggregation_rate = 0.5
-        self.perfl_layers = ["classifier"]
+        self.dinar_layers = ["classifier"]
         self.layer_type = "linear"
 
         # Data results

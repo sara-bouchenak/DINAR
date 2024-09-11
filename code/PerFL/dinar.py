@@ -3,7 +3,7 @@ from torch.nn.functional import normalize
 import torch
 
 
-def perfl(target_model, layer_type='bn', layers=['bn']):
+def dinar(target_model, layer_type='bn', layers=['bn']):
     model_dict = copy.deepcopy(target_model)
     for key in target_model:
         for layer in layers:
@@ -18,7 +18,7 @@ def perfl(target_model, layer_type='bn', layers=['bn']):
     return model_dict
 
 
-def aggregation_perfl(local_weights, layers):
+def aggregation_dinar(local_weights, layers):
     w_avg = copy.deepcopy(local_weights[0])
     for key in w_avg.keys():
         for i in range(1, len(local_weights)):

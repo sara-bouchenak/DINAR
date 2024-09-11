@@ -94,7 +94,7 @@ def prepare_attack_data(model,
                         top_k=False,
                         test_dataset=False,
                         attack=False,
-                        perfl=True,
+                        dinar=True,
                         layers=[]):
     attack_x = []
     attack_y = []
