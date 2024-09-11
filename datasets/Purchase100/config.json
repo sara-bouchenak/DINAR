@@ -1,0 +1,19 @@
+[
+    {
+    "experiment_name" : "purchase_WOFc",
+    "config": {
+      "dataset": "purchase",
+      "num_classes": 100,
+      "num_users": 10,
+      "local_ep": 10,
+      "attack_min_epoch": 290,
+      "epochs": 300,
+      "lr": 0.001,
+      "momentum": 0.5,
+      "optimizer": "adagrad",
+      "ppm": "perfl",
+      "result_path": "./results/ppm_adagrad_purchase.csv",
+      "perfl_layers" : ["classifier"]
+    }
+  }
+]

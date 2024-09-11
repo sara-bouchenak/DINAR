@@ -1,0 +1,23 @@
+[
+                {
+    "experiment_name" : "purchase_vgg_WoLastBN",
+    "config": {
+      "dataset": "texas",
+      "classifier": "linear",
+      "epochs": 200,
+      "attack_min_epoch" : 190,
+      "local_ep": 10,
+"num_users": 10,
+      "lr": 1e-3,
+      "ppm" : "perfl",
+      "optimizer" : "adagrad",
+      "relaxloss_alpha": 0.2,
+      "perfl_layers" : ["features.0"],
+"layer_type": "linear",
+      "shared_aggregation": 0,
+      "posterior_flattening": 0,
+      "posterior_flattening_epoch": 0,
+      "prob_distribution" : "None",
+      "result_path": "./results/ppm_perfl_adagrad_features0_texas.csv"
+    }}
+]

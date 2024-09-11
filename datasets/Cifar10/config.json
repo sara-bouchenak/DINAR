@@ -1,0 +1,20 @@
+ {
+"experiment_name" : "cifar",
+"config": {
+  "dataset": "cifar",
+  "classifier": "vgg",
+  "epochs": 50,
+  "attack_min_epoch" : 40,
+  "local_ep": 5,
+  "num_users": 10,
+  "lr": 1e-3,
+  "ppm" : "perfl",
+  "optimizer" : "adagrad",
+  "relaxloss_alpha": 0.2,
+  "perfl_layers" : ["features.25."],
+  "shared_aggregation": 0,
+  "posterior_flattening": 0,
+  "posterior_flattening_epoch": 0,
+  "prob_distribution" : "None",
+  "result_path": "./results/ppm_perfl_conv8_true_adgrad_cifar_vgg.csv"
+}}
