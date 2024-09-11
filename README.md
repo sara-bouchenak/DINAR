@@ -3,6 +3,7 @@
 ## Description
 
 **DINAR**: fine-graine**D** pr**I**vacy-preservi**N**g feder**A**ted lea**R**ning
+A system for privacy-preserving federated learning.
 
 ## Contents
 - The source code of DINAR and different implemented baselines and competitors, along with instructions to run the code are in ```code```.
