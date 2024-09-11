@@ -11,9 +11,9 @@
       "lr": 0.001,
       "momentum": 0.5,
       "optimizer": "adagrad",
-      "ppm": "perfl",
+      "ppm": "dinar",
       "result_path": "./results/ppm_adagrad_purchase.csv",
-      "perfl_layers" : ["classifier"]
+      "dinar_layers" : ["classifier"]
     }
   }
 ]

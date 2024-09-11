@@ -8,13 +8,13 @@
           "local_ep": 5,
           "num_users": 5,
           "lr": 1e-3,
-          "ppm" : "perfl",
+          "ppm" : "dinar",
           "optimizer" : "adagrad",
           "relaxloss_alpha": 0.2,
-          "perfl_layers" : ["conv16."],
+          "dinar_layers" : ["conv16."],
           "shared_aggregation": 0,
           "posterior_flattening": 0,
           "posterior_flattening_epoch": 0,
           "prob_distribution" : "None",
-          "result_path": "./results/ppm_perfl_conv16_true_adagrad_speechcommands.csv"
+          "result_path": "./results/ppm_dinar_conv16_true_adagrad_speechcommands.csv"
         }}]
