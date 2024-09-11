@@ -2,7 +2,7 @@
 
 ## Description
 
-The repository of "DINAR : Personalized Privacy-Preserving Federated Learning".
+DINAR: fine-graine**D** pr**I**vacy-preservi**N**g feder**A**ted lea**R**ning
 
 ## Usage
 - The source code of DINAR and different implemented baselines and competitors, along with instructions to run the code are in ```code```.
