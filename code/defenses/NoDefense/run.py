@@ -11,8 +11,8 @@ import pandas as pd
 import config
 from aggregation import  average_weights
 from config import DINAR
-from dataset import get_dataset, split_target_shadow_dataset, data_to_loader
-from mia import create_attack, prepare_attack_model
+from dataset_setup.dataset_setup import get_dataset, split_target_shadow_dataset, data_to_loader
+from attack.MIA.mia import create_attack, prepare_attack_model
 from model import get_models
 from parser import Arguments
 from dinar import dinar, aggregation_dinar
